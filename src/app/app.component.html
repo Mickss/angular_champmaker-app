@@ -1,0 +1,20 @@
+<p>Date</p>
+<input type="text" [(ngModel)]="championshipDate">
+<p>City</p>
+<input type="text" [(ngModel)]="championshipCity">
+<p>Chanpionship Title</p>
+<input type="text" [(ngModel)]="championshipName">
+<button type="button" (click)="createChampionship(championshipName)">Add championship</button>
+
+<div class="row">
+    <div class="col-xs-12 col=md-6 col-md-offset-3">
+      <p></p>
+      <ul>
+        <li class="list-group-item" *ngFor="let data of championships">
+          <h1>{{ data.name }}</h1>
+          <p>{{ data.name }}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
